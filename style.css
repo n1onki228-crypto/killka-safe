@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    background: linear-gradient(135deg, #fff3d6, #ffd6a5, #ffb4a2);
+    color: #5a321e;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 25px;
+    padding: 45px 30px;
+    text-align: center;
+    box-shadow: 0 10px 35px rgba(100, 50, 20, 0.2);
+}
+
+.decor {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 34px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    color: #b85c38;
+}
+
+.subtitle {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #795548;
+}
+
+button {
+    background: #e8835b;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #c9653f;
+    transform: scale(1.05);
+}
+
+.message {
+    display: none;
+    margin-top: 30px;
+    padding: 25px;
+    background: #fff8ed;
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+    animation: appear 0.8s ease;
+}
+
+.message h2 {
+    color: #b85c38;
+    margin-bottom: 20px;
+}
+
+.message p {
+    margin-bottom: 15px;
+}
+
+.signature {
+    font-weight: bold;
+    color: #a94f35;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 27px;
+    }
+
+    .card {
+        padding: 30px 20px;
+    }
+
+    .message {
+        font-size: 16px;
+    }
+}
